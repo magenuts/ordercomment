@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magenuts" translate="label" sortOrder="90">
+            <label>Magenuts</label>
+        </tab>
+         <section id="FrontOrderComment"  showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>magenuts</tab>
+            <label>Order Comment</label>
+            <resource>Magenuts_FrontOrderComment::config_magenuts_frontordercomment</resource>
+            <group id="module"  showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Enable/Disable</label>
+                <field id="ordercomment" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Order Comment </label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+			</group>
+        </section>
+	</system>
+</config>

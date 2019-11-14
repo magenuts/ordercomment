@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenuts 
+ * Magenuts Order Comments
+ *
+ * @category   Magenuts
+ * @package    Magenuts_FrontOrderComment
+ * @copyright  Copyright © 20016-2018 Magenuts (https://www.magenuts.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+      <add id="Magenuts_FrontOrderComment::frontordercomment" title="Front Order Comments" 
+           module="Magenuts_FrontOrderComment" sortOrder="5" 
+           resource="Magenuts_FrontOrderComment::frontordercomment" 
+           parent="Magenuts_Core::menu"/>
+      <add id="Magenuts_FrontOrderComment::config_magenuts_frontordercomment" title="Configuration" 
+           module="Magenuts_FrontOrderComment" parent="Magenuts_FrontOrderComment::frontordercomment" 
+           sortOrder="10" action="adminhtml/system_config/edit/section/FrontOrderComment" 
+           resource="Magenuts_FrontOrderComment::config_magenuts_frontordercomment"/>
+    </menu>
+</config>
