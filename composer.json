@@ -11,6 +11,15 @@
         "php": "~5.6.0|7.0.2|~7.0.6",
         "magento/framework": "100.1.*"
     },
+	"authors": 
+	[
+		{
+		  "name": "Magenuts Team",
+		  "email": "support@magenuts.com",
+		  "homepage": "http://www.magenuts.com",
+		  "role": "Technical Support"
+		}
+	],
     "autoload": {
         "files": [ "registration.php" ],
         "psr-4": {
